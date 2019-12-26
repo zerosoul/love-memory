@@ -22,11 +22,19 @@ const GlobalStyle = createGlobalStyle`
     margin:0 auto;
     min-height:100vh;
     position: relative;
+    &.impress-enabled .step {
+      margin: 0;
+      opacity: 0.3;
+      transition: opacity 1s;
+      &.active {
+        opacity: 1;
+      }
+    }
   }
-  #root{
-    min-height:100vh;
-    background-image:linear-gradient(135deg, rgb(96, 108, 136) 0%, rgb(63, 76, 107) 100%);
-  }
+#root{
+  height:100vh;
+  background: radial-gradient(#ffb3a7, #f9906f);
+}
 
   @media screen and (min-width: 320px){
       html {
