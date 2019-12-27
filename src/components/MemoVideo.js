@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import styled from 'styled-components';
 import PlayImage from '../assets/img/play.svg';
 
@@ -49,13 +49,20 @@ const StyledWrapper = styled.div`
   }
 `;
 
-export default function MemoVideo({ video, title = '', desc = '' }) {
+export default function MemoVideo({ paused = false, video, title = '', desc = '' }) {
   const videoEle = useRef(null);
   const [play, setPlay] = useState(false);
   const handleClick = () => {
     setPlay(true);
     videoEle.current.play();
   };
+  useEffect(() => {
+    if (paused) {
+      videoEle.current.pause();
+    } else if (play) {
+      videoEle.current.play();
+    }
+  }, [paused, play]);
   return (
     <StyledWrapper className="video">
       {title && <div className="title">{title}</div>}

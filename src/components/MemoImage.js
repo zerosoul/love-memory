@@ -34,12 +34,12 @@ const StyledWrapper = styled.div`
   }
 `;
 
-export default function MemoImage({ img, title = '', desc = '' }) {
+export default function MemoImage({ img, title = '', desc = '', width = '60%' }) {
   return (
     <StyledWrapper className="photo">
       {title && <div className="title">{title}</div>}
       {desc && <div className="desc">{desc}</div>}
-      <img src={img} />
+      <img style={{ width }} src={img} />
     </StyledWrapper>
   );
 }

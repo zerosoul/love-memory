@@ -14,16 +14,17 @@ const StyledWrapper = styled.div`
     padding: 8px;
     vertical-align: middle;
     img {
-      width: 80%;
+      width: 60%;
       border: 4px solid #fff;
       margin: 0 auto;
     }
   }
   .title {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 10px 14px;
-    background: rgba(2, 2, 2, 0.6);
+    background: rgba(2, 2, 2, 0.7);
+    font-size: 24px;
   }
 `;
 export default function Huanlegu() {

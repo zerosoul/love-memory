@@ -2,8 +2,8 @@ import React from 'react';
 import Poetry from './Poetry';
 const ID = 'p-autumn';
 const content = `<p>你问我秋天有哪般好：</p>
-<p>我说枫叶红似火，流水绕石桥，</p>
-<p>你默默点头</p>
+<p>我说枫叶红似火，流水绕石桥。</p>
+<p>你默默点头。</p>
 <p>其实你不知道...</p>
 <p>是因为你走过的落叶铺满的街道。</p>`;
 export default function PAutumn({ currStep }) {

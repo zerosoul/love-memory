@@ -13,8 +13,15 @@ import Xiufa from './components/Xiufa';
 import Behind from './components/Behind';
 import Huanlegu from './components/Huanlegu';
 import PAutumn from './components/PAutumn';
+import PWinter from './components/PWinter';
 import Huas from './components/Huas';
+import OnTheRoad from './components/OnTheRoad';
 import VideoYang from './components/VideoYang';
+import VideoTired from './components/VideoTired';
+import Thanks1 from './components/Thanks1';
+import Thanks2 from './components/Thanks2';
+import Thanks3 from './components/Thanks3';
+import Thanks4 from './components/Thanks4';
 const StyledBody = styled.section`
   min-height: 740px;
   opacity: 0;
@@ -33,7 +40,7 @@ const StyledBody = styled.section`
   }
 `;
 const App = () => {
-  const [start, setStart] = useState(true);
+  const [start, setStart] = useState(false);
   const [currStep, setCurrStep] = useState('');
   useEffect(() => {
     const rootElement = document.getElementById('impress');
@@ -67,32 +74,15 @@ const App = () => {
 
         <Huanlegu />
         <PAutumn currStep={currStep} />
-        <VideoYang />
+        <VideoYang currStep={currStep} />
         <Huas />
-        <div id="one-more-thing2" className="step" data-x="7000" data-y="4000" data-scale="2">
-          <p>one more thing...</p>
-          <p>one more thing...</p>
-          <p>one more thing...</p>
-          <p>one more thing...</p>
-        </div>
-        <div id="one-more-thing3" className="step" data-x="8000" data-y="4000" data-scale="2">
-          <p>one more thing...</p>
-          <p>one more thing...</p>
-          <p>one more thing...</p>
-          <p>one more thing...</p>
-        </div>
-        <div id="one-more-" className="step" data-x="9000" data-y="5000" data-scale="3">
-          <p>one more thing...</p>
-          <p>one more thing...</p>
-          <p>one more thing...</p>
-          <p>one more thing...</p>
-        </div>
-        <div id="one-mor" className="step" data-x="10000" data-y="6000" data-scale="4">
-          <p>one more thing...</p>
-          <p>one more thing...</p>
-          <p>one more thing...</p>
-          <p>one more thing...</p>
-        </div>
+        <OnTheRoad />
+        <PWinter currStep={currStep} />
+        <VideoTired currStep={currStep} />
+        <Thanks1 />
+        <Thanks2 />
+        <Thanks3 />
+        <Thanks4 />
 
         <div
           id="its-in-3d"
@@ -104,16 +94,7 @@ const App = () => {
           data-rotate-y="10"
           data-scale="2"
         >
-          <p>
-            <span className="have">have</span> <span className="you">you</span>{' '}
-            <span className="noticed">noticed</span> <span className="its">it’s</span>{' '}
-            <span className="in">in</span>{' '}
-            <b>
-              3D<sup>*</sup>
-            </b>
-            ?
-          </p>
-          <span className="footnote">* beat that, prezi ;)</span>
+          未完待续
         </div>
       </StyledBody>
     </>

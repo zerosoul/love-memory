@@ -14,25 +14,24 @@ import Img8 from '../assets/memo/hua.8.png';
 const StyledWrapper = styled.div`
   /* display: flex; */
   /* width: 650px !important; */
-  /* .center {
+  .hua {
     padding: 8px;
     img {
       border: 4px solid #fff;
     }
-  } */
+  }
   .title {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 10px 14px;
     background: rgba(2, 2, 2, 0.6);
   }
 `;
 export default function Huas() {
   const settings = {
-    className: 'center',
-    centerMode: true,
+    className: 'hua',
     infinite: true,
-    centerPadding: '60px',
+    autoplay: true,
     slidesToShow: 3,
     speed: 500
   };

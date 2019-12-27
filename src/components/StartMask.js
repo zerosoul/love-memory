@@ -12,7 +12,16 @@ const StyledWrapper = styled.div`
   justify-content: center;
   align-items: center;
   .start {
-    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 50%;
+    background: pink;
+    color: #555;
+    font-weight: 800;
   }
 `;
 export default function StartMask({ startPlay }) {
@@ -23,7 +32,7 @@ export default function StartMask({ startPlay }) {
   return (
     <StyledWrapper>
       <button className="start" onClick={handlePlay}>
-        play
+        开始
       </button>
     </StyledWrapper>
   );
