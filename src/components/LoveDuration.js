@@ -71,12 +71,13 @@ const StyledWrapper = styled.div`
   .dur {
     letter-spacing: 1px;
     font-weight: 800;
-    font-size: 60px;
+    font-size: 50px;
     .time {
       background-color: rgba(0, 0, 0, 0.3);
-      padding: 6px 8px;
+      padding: 8px;
     }
     em {
+      font-size: 30px;
       font-weight: 400;
       letter-spacing: 0;
       margin: 0 4px;

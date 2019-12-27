@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
     position: relative;
     &.impress-enabled .step {
       margin: 0;
-      opacity: 0.3;
+      opacity: 0.1;
       transition: opacity 1s;
       &.active {
         opacity: 1;

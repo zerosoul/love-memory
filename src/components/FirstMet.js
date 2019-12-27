@@ -2,15 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import Img from '../assets/memo/first.met.jpg';
 import MemoImage from './MemoImage';
-const StyledWrapper = styled.div`
-  background-color: #a98175;
-`;
+const StyledWrapper = styled.div``;
 export default function FirstMet() {
   return (
     <StyledWrapper
       id="first-met"
       className="step slide"
-      data-x="-0"
+      data-x="1000"
       data-y="-1500"
       // data-autoplay="5"
     >

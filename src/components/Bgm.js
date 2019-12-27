@@ -10,7 +10,7 @@ const StyledWrapper = styled.div`
 export default function Bgm() {
   return (
     <StyledWrapper>
-      <audio src={Song} autoPlay controls={false} />
+      <audio id="BGM" loop src={Song} autoPlay controls={false} />
     </StyledWrapper>
   );
 }

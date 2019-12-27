@@ -6,35 +6,39 @@ const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  &::before {
+  .title {
     position: absolute;
-    content: attr(data-title);
-    background-color: rgba(2, 2, 2, 0.6);
+    background-color: rgba(2, 2, 2, 0.8);
     font-weight: 800;
     top: 0;
-    left: -10px;
-    display: block;
-    padding: 5px 10px;
-    transform: rotate('10deg');
+    left: 0px;
+    padding: 10px;
+    z-index: 1;
+    transform: rotate(-10deg);
   }
-  &::after {
+  .desc {
     position: absolute;
-    content: attr(data-desc);
-    background-color: rgba(2, 2, 2, 0.4);
+    background-color: rgba(2, 2, 2, 0.6);
     font-size: 22px;
     bottom: 0;
-    left: 0;
-    display: block;
-    padding: 15px 20px;
+    right: 0;
+    padding: 15px;
+    z-index: 2;
+    transform: rotate(-5deg);
   }
   img {
-    width: 100%;
+    box-shadow: 0 0 8px 2px #a98175;
+    border: 10px solid #fff;
+    transform: rotate(5deg);
+    width: 60%;
   }
 `;
 
 export default function MemoImage({ img, title = '', desc = '' }) {
   return (
-    <StyledWrapper data-title={title} data-desc={desc}>
+    <StyledWrapper className="photo">
+      {title && <div className="title">{title}</div>}
+      {desc && <div className="desc">{desc}</div>}
       <img src={img} />
     </StyledWrapper>
   );
