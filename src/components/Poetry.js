@@ -7,15 +7,21 @@ const StyledWrapper = styled.div`
   min-height: 300px;
   font-family: 'FZ Spec';
 `;
+// eslint-disable-next-line no-unused-vars
 let TypedObj = null;
 export default function Poetry({ id, currStep, content = '', ...rest }) {
   useEffect(() => {
+    console.log({ TypedObj });
+
     if (currStep == id && !TypedObj) {
       TypedObj = new Typed(`#${id}`, {
         strings: [`${content}`],
+        fadeOut: true,
         startDelay: 30,
         typeSpeed: 100
       });
+    } else {
+      TypedObj = null;
     }
   }, [content, currStep, id]);
   return <StyledWrapper id={id} className="step slide" {...rest}></StyledWrapper>;

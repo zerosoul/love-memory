@@ -85,7 +85,7 @@ const StyledWrapper = styled.div`
   }
 `;
 let interInt = null;
-const firstTime = new Date('2016-10-10 10:10:00');
+const firstTime = new Date('2016/10/10 10:10:00');
 export default function LoveDuration() {
   const [duration, setDuration] = useState({ d: 0, h: 0, m: 0, s: 0 });
   useEffect(() => {
@@ -114,7 +114,7 @@ export default function LoveDuration() {
       className="step slide"
       data-x="-1000"
       data-y="-1500"
-      // data-autoplay="20"
+      data-autoplay="10"
     >
       <div className="heart"></div>
       <div className="cp">

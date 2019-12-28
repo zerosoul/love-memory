@@ -16,7 +16,7 @@ export default function VideoYang({ currStep }) {
   }, [currStep]);
   return (
     <StyledWrapper id={currId} className="step slide" data-x="6000" data-y="4000" data-scale="2">
-      <MemoVideo paused={!isCurr} desc="羊....国！春~~~！" video={VideoSrc} />
+      <MemoVideo paused={!isCurr} desc="羊！国！春！~~~" video={VideoSrc} />
     </StyledWrapper>
   );
 }
