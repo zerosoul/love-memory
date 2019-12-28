@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/zerosoul/love-memory/issues"
   },
-  "homepage": "https://zerosoul.github.io/love-memory",
+  "homepage": "https://works.yangerxiao.com/love-memory",
   "dependencies": {
     "impress.js": "^1.0.0",
     "react": "^16.12.0",
