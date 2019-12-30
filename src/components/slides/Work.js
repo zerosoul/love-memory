@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Img from '../assets/memo/work.jpg';
-import MemoImage from './MemoImage';
+import Img from '../../assets/memo/work.jpg';
+import MemoImage from '../MemoImage';
 const StyledWrapper = styled.div``;
 export default function Work() {
   return (

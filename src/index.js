@@ -19,7 +19,7 @@ const Coms = () => {
         }}
       />
       <GlobalStyle />
-      <App />
+      {loaded && <App />}
     </>
   );
 };

@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Img0 from '../assets/memo/youlechang.0.png';
-import Img1 from '../assets/memo/youlechang.1.png';
-import Img2 from '../assets/memo/youlechang.2.png';
-import Img3 from '../assets/memo/youlechang.3.png';
+import Img0 from '../../assets/memo/youlechang.0.png';
+import Img1 from '../../assets/memo/youlechang.1.png';
+import Img2 from '../../assets/memo/youlechang.2.png';
+import Img3 from '../../assets/memo/youlechang.3.png';
 const StyledWrapper = styled.div`
   /* display: flex; */
   /* width: 600px !important; */

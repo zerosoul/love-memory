@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Img from '../assets/memo/xiufa.1.png';
-import MemoImage from './MemoImage';
+import Img from '../../assets/memo/xiufa.1.png';
+import MemoImage from '../MemoImage';
 const StyledWrapper = styled.div``;
 export default function Xiufa() {
   return (
@@ -17,6 +17,7 @@ export default function Xiufa() {
     >
       <MemoImage
         img={Img}
+        date="2018.02.27"
         width="40%"
         title="染发啦"
         desc="第一次陪你去染发，兴奋得像个孩子，一说要拍照，又安静得像个淑女~"

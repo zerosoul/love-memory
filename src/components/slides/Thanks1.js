@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Img from '../assets/memo/thanks.cooking.png';
-import MemoImage from './MemoImage';
+import Img from '../../assets/memo/thanks.cooking.png';
+import MemoImage from '../MemoImage';
 const StyledWrapper = styled.div``;
 export default function Thanks1() {
   return (

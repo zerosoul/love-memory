@@ -2,26 +2,26 @@ import React, { useEffect, useState } from 'react';
 import 'impress.js';
 import styled from 'styled-components';
 import StartMask from './components/StartMask';
-import LoveDuration from './components/LoveDuration';
-import PSpring from './components/PSpring';
-import FirstMet from './components/FirstMet';
-import Work from './components/Work';
-import PairPhoto from './components/PairPhoto';
-import Huoguos from './components/Huoguos';
-import PSummer from './components/PSummer';
-import Xiufa from './components/Xiufa';
-import Behind from './components/Behind';
-import Huanlegu from './components/Huanlegu';
-import PAutumn from './components/PAutumn';
-import PWinter from './components/PWinter';
-import Huas from './components/Huas';
-import OnTheRoad from './components/OnTheRoad';
-import VideoYang from './components/VideoYang';
-import VideoTired from './components/VideoTired';
-import Thanks1 from './components/Thanks1';
-import Thanks2 from './components/Thanks2';
-import Thanks3 from './components/Thanks3';
-import Thanks4 from './components/Thanks4';
+import LoveDuration from './components/slides/LoveDuration';
+import PSpring from './components/slides/PSpring';
+import FirstMet from './components/slides/FirstMet';
+import Work from './components/slides/Work';
+import PairPhoto from './components/slides/PairPhoto';
+import Huoguos from './components/slides/Huoguos';
+import PSummer from './components/slides/PSummer';
+import Xiufa from './components/slides/Xiufa';
+import Behind from './components/slides/Behind';
+import Huanlegu from './components/slides/Huanlegu';
+import PAutumn from './components/slides/PAutumn';
+import PWinter from './components/slides/PWinter';
+import Huas from './components/slides/Huas';
+import OnTheRoad from './components/slides/OnTheRoad';
+import VideoYang from './components/slides/VideoYang';
+import VideoTired from './components/slides/VideoTired';
+import Thanks1 from './components/slides/Thanks1';
+import Thanks2 from './components/slides/Thanks2';
+import Thanks3 from './components/slides/Thanks3';
+import Thanks4 from './components/slides/Thanks4';
 const StyledBody = styled.section`
   min-height: 740px;
   opacity: 0;
@@ -33,7 +33,7 @@ const StyledBody = styled.section`
     position: relative;
     width: 900px;
     padding: 40px;
-    margin: 20px auto;
+    margin: 0 auto;
     box-sizing: border-box;
     font-size: 48px;
     line-height: 1.5;
@@ -52,8 +52,10 @@ const App = () => {
       console.log("Entered the Step Element '" + currentStep.id + "'");
       setCurrStep(currentStep.id);
     });
-    window.impress().init();
-  }, []);
+    if (start) {
+      window.impress().init();
+    }
+  }, [start]);
   const handleStart = () => {
     setStart(true);
   };

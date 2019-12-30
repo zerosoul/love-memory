@@ -3,14 +3,14 @@ import styled from 'styled-components';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Img2 from '../assets/memo/huoguo.2.png';
-import Img3 from '../assets/memo/huoguo.3.png';
-import Img4 from '../assets/memo/huoguo.4.png';
-import Img5 from '../assets/memo/huoguo.5.png';
-import Img6 from '../assets/memo/huoguo.6.png';
-import Img7 from '../assets/memo/huoguo.7.png';
-import Img8 from '../assets/memo/huoguo.8.png';
-import Img9 from '../assets/memo/huoguo.9.png';
+import Img2 from '../../assets/memo/huoguo.2.png';
+import Img3 from '../../assets/memo/huoguo.3.png';
+import Img4 from '../../assets/memo/huoguo.4.png';
+import Img5 from '../../assets/memo/huoguo.5.png';
+import Img6 from '../../assets/memo/huoguo.6.png';
+import Img7 from '../../assets/memo/huoguo.7.png';
+import Img8 from '../../assets/memo/huoguo.8.png';
+import Img9 from '../../assets/memo/huoguo.9.png';
 const StyledWrapper = styled.div`
   /* display: flex; */
   /* width: 650px !important; */

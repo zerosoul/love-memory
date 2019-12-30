@@ -1,5 +1,5 @@
 import React from 'react';
-import Poetry from './Poetry';
+import Poetry from '../Poetry';
 const ID = 'p-spring';
 const content = `<p>你问我春天有哪般好：</p>
 <p>我说绿柳抽新芽，花枝春意闹。</p>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Poetry from './Poetry';
+import Poetry from '../Poetry';
 const ID = 'p-summer';
 const content = `<p>你问我夏天有哪般好：</p>
 <p>我说阳光照沙滩，海浪多美妙。</p>

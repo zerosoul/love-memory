@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import MemoVideo from './MemoVideo';
-import VideoSrc from '../assets/memo/ygc.mp4';
+import MemoVideo from '../MemoVideo';
+import VideoSrc from '../../assets/memo/ygc.mp4';
 
 const StyledWrapper = styled.div``;
 const currId = 'video-yang';

@@ -1,5 +1,5 @@
 import React from 'react';
-import Poetry from './Poetry';
+import Poetry from '../Poetry';
 const ID = 'p-autumn';
 const content = `<p>你问我秋天有哪般好：</p>
 <p>我说枫叶红似火，流水绕石桥。</p>

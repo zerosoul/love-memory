@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import Heart from './Heart';
+import Notepaper from './Notepaper';
 const StyledWrapper = styled.div`
   position: relative;
   display: flex;
@@ -8,21 +9,21 @@ const StyledWrapper = styled.div`
   align-items: center;
   .title {
     position: absolute;
-    background-color: rgba(2, 2, 2, 0.8);
+    background: rgb(242, 246, 193);
+    border: 1px solid rgba(170, 157, 134, 0.5);
     font-weight: 800;
+    color: #333;
     top: 0;
     left: 0px;
-    padding: 10px;
+    padding: 10px 20px;
     z-index: 1;
     transform: rotate(-10deg);
   }
   .desc {
     position: absolute;
-    background-color: rgba(2, 2, 2, 0.6);
     font-size: 22px;
     bottom: 0;
     right: 0;
-    padding: 15px;
     z-index: 2;
     transform: rotate(-5deg);
   }
@@ -32,14 +33,38 @@ const StyledWrapper = styled.div`
     transform: rotate(5deg);
     width: 60%;
   }
+  .heart {
+    position: absolute;
+    top: 40%;
+
+    opacity: 0.5;
+    transform: rotate(-3deg);
+  }
 `;
 
-export default function MemoImage({ img, title = '', desc = '', width = '60%' }) {
+export default function MemoImage({ img, title = '', desc = '', date = '', width = '60%' }) {
   return (
     <StyledWrapper className="photo">
       {title && <div className="title">{title}</div>}
-      {desc && <div className="desc">{desc}</div>}
+      {title && <Heart style={{ left: 0 }} size="50px" />}
+      {desc && (
+        <Heart
+          style={{ opacity: '.4', left: 'auto', transform: 'rotate(-70deg)', right: 0 }}
+          size="30px"
+        />
+      )}
+      {desc && <Notepaper date={date} content={desc} className="desc"></Notepaper>}
       <img style={{ width }} src={img} />
+      <Heart
+        style={{
+          opacity: '.3',
+          top: '88%',
+          left: '-10px',
+          transform: 'rotate(-100deg)',
+          right: 'auto'
+        }}
+        size="30px"
+      />
     </StyledWrapper>
   );
 }

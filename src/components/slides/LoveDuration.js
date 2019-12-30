@@ -1,14 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import styled, { keyframes } from 'styled-components';
-import MtlImg from '../assets/memo/mtl.jpg';
-const Beat = keyframes`
-    0% {
-      transform: scale(1) rotate(-45deg);
-    }
-    50% {
-      transform: scale(0.8) rotate(-45deg);
-    }
-`;
+import styled from 'styled-components';
+import MtlImg from '../../assets/memo/mtl.jpg';
+import Heart from '../Heart';
 const StyledWrapper = styled.div`
   background-color: #a98175;
   display: flex;
@@ -25,48 +18,16 @@ const StyledWrapper = styled.div`
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 20px 0 40px 0;
+    margin: 20px 0 0 0;
     box-shadow: 0 2px 6px #b36d61;
     img {
       width: 100%;
     }
   }
-  .heart {
-    margin: 30px 0 20px 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #dc3023;
-    height: 100px;
-    width: 100px;
-    transform: rotate(-45deg);
-    animation-name: ${Beat};
-    animation-duration: 1.8s;
-    animation-iteration-count: infinite;
-    &:after {
-      background-color: #dc3023;
-      content: '';
-      border-radius: 50%;
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      top: 0px;
-      left: 50%;
-    }
-    &:before {
-      background-color: #dc3023;
-      content: '';
-      border-radius: 50%;
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      top: -50%;
-      left: 0px;
-    }
-  }
+
   .title {
     font-size: 40px;
+    margin-bottom: 30px;
   }
   .dur {
     letter-spacing: 1px;
@@ -116,7 +77,7 @@ export default function LoveDuration() {
       data-y="-1500"
       data-autoplay="10"
     >
-      <div className="heart"></div>
+      <Heart animated={true} />
       <div className="cp">
         <img src={MtlImg} alt="摩天轮下" />
       </div>

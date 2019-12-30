@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Img from '../assets/memo/thanks.cc.png';
-import MemoImage from './MemoImage';
+import Img from '../../assets/memo/thanks.cc.png';
+import MemoImage from '../MemoImage';
 const StyledWrapper = styled.div``;
 export default function Thanks3() {
   return (
@@ -13,7 +13,7 @@ export default function Thanks3() {
       data-scale="3"
       data-autoplay="6"
     >
-      <MemoImage width="40%" img={Img} title="感谢" desc="给晨晨梳出漂亮的小辫" />
+      <MemoImage width="40%" date="2018.10.03" img={Img} title="感谢" desc="给晨晨梳的漂亮小辫" />
     </StyledWrapper>
   );
 }
