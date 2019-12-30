@@ -38,7 +38,14 @@ export default function Huanlegu() {
     slidesToScroll: 1
   };
   return (
-    <StyledWrapper id="huanlegu" className="step" data-x="6700" data-y="-300" data-scale="6">
+    <StyledWrapper
+      id="huanlegu"
+      className="step"
+      data-x="6700"
+      data-y="-300"
+      data-scale="6"
+      data-autoplay="15"
+    >
       <Slider {...settings}>
         <div className="imgItem">
           <img src={Img0} alt="图一" />

@@ -42,7 +42,7 @@ export default function Huas() {
       data-x="7000"
       data-y="4000"
       data-scale="2"
-      // data-autoplay="5"
+      data-autoplay="15"
     >
       <Slider {...settings}>
         <div>

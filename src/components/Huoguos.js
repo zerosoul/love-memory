@@ -45,7 +45,7 @@ export default function Huoguos() {
       data-y="3000"
       data-rotate="90"
       data-scale="5"
-      // data-autoplay="5"
+      data-autoplay="15"
     >
       <Slider {...settings}>
         <div className="imgItem">

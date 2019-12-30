@@ -14,7 +14,7 @@ export default function PairPhoto() {
       data-x="0"
       data-y="0"
       data-scale="4"
-      // data-autoplay="5"
+      data-autoplay="6"
     >
       <MemoImage
         img={Img1}

@@ -14,6 +14,7 @@ export default function Poetry({ id, currStep, content = '', ...rest }) {
     console.log({ TypedObj });
 
     if (currStep == id && !TypedObj) {
+      // TypedObj.destory();
       TypedObj = new Typed(`#${id}`, {
         strings: [`${content}`],
         fadeOut: true,

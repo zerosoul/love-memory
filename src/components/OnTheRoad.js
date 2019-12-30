@@ -41,7 +41,7 @@ export default function OnTheRoad() {
       data-x="7000"
       data-y="5000"
       data-scale="1"
-      // data-autoplay="5"
+      data-autoplay="15"
     >
       <Slider {...settings}>
         <div>

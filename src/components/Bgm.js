@@ -7,10 +7,10 @@ const StyledWrapper = styled.div`
   top: 10px;
   right: 10px;
 `;
-export default function Bgm() {
+export default function Bgm({ loadOver }) {
   return (
     <StyledWrapper>
-      <audio id="BGM" loop src={Song} autoPlay controls={false} />
+      <audio id="BGM" loop onCanPlay={loadOver} src={Song} autoPlay controls={false} />
     </StyledWrapper>
   );
 }

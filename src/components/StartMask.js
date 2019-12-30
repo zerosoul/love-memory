@@ -26,7 +26,7 @@ const StyledWrapper = styled.div`
 `;
 export default function StartMask({ startPlay }) {
   const handlePlay = () => {
-    // document.querySelector('#BGM').play();
+    document.querySelector('#BGM').play();
     startPlay();
   };
   return (

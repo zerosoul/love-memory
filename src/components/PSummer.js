@@ -16,6 +16,7 @@ export default function PSummer({ currStep }) {
       data-y="2100"
       data-rotate="180"
       data-scale="6"
+      data-autoplay="13"
     />
   );
 }

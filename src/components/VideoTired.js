@@ -15,7 +15,14 @@ export default function VideoTired({ currStep }) {
     }
   }, [currStep]);
   return (
-    <StyledWrapper id={currId} className="step slide" data-x="9000" data-y="5000" data-scale="3">
+    <StyledWrapper
+      id={currId}
+      className="step slide"
+      data-x="9000"
+      data-y="5000"
+      data-scale="3"
+      data-autoplay="15"
+    >
       <MemoVideo paused={!isCurr} desc="可把我累坏了~~~" video={VideoSrc} />
     </StyledWrapper>
   );

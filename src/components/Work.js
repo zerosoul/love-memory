@@ -5,13 +5,7 @@ import MemoImage from './MemoImage';
 const StyledWrapper = styled.div``;
 export default function Work() {
   return (
-    <StyledWrapper
-      id="work"
-      className="step slide"
-      data-x="2000"
-      data-y="-1500"
-      // data-autoplay="5"
-    >
+    <StyledWrapper id="work" className="step slide" data-x="2000" data-y="-1500" data-autoplay="6">
       <MemoImage
         img={Img}
         title="第一次送你的拼图"
