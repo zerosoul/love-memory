@@ -10,7 +10,7 @@ import Img7 from '../../assets/memo/hua.7.png';
 import Img8 from '../../assets/memo/hua.8.png';
 import MemoImage from '../MemoImage';
 const StyledWrapper = styled.div``;
-export default function Huas() {
+export default function Huas({ step }) {
   return (
     <StyledWrapper
       id="huas"
@@ -18,12 +18,14 @@ export default function Huas() {
       data-x="7000"
       data-y="4000"
       data-scale="2"
-      data-autoplay="15"
+      data-autoplay="28"
     >
-      <MemoImage
-        title={'花一样的你，猪一样的我'}
-        img={[Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8]}
-      />
+      {step == 'huas' && (
+        <MemoImage
+          title={'花一样的你，猪一样的我'}
+          img={[Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8]}
+        />
+      )}
     </StyledWrapper>
   );
 }

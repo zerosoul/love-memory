@@ -13,12 +13,11 @@ export default function Xiufa() {
       data-z="-3000"
       data-rotate="300"
       data-scale="1"
-      data-autoplay="3336"
+      data-autoplay="6"
     >
       <MemoImage
         img={Img}
         date="2018.02.27"
-        width="40%"
         title="染发啦"
         desc="第一次陪你去染发，兴奋得像个孩子，一说要拍照，又安静得像个淑女~"
       />

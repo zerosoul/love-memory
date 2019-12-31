@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import Img1 from '../../assets/memo/huoguo.1.png';
 import Img2 from '../../assets/memo/huoguo.2.png';
 import Img3 from '../../assets/memo/huoguo.3.png';
 import Img4 from '../../assets/memo/huoguo.4.png';
+import Img41 from '../../assets/memo/huoguo.4.1.png';
 import Img5 from '../../assets/memo/huoguo.5.png';
 import Img6 from '../../assets/memo/huoguo.6.png';
 import Img7 from '../../assets/memo/huoguo.7.png';
@@ -11,7 +13,7 @@ import Img9 from '../../assets/memo/huoguo.9.png';
 import MemoImage from '../MemoImage';
 
 const StyledWrapper = styled.div``;
-export default function Huoguos() {
+export default function Huoguos({ step }) {
   return (
     <StyledWrapper
       id="huoguos"
@@ -22,10 +24,12 @@ export default function Huoguos() {
       data-scale="5"
       data-autoplay="27"
     >
-      <MemoImage
-        title={'那些年，我们一起吃的火锅'}
-        img={[Img9, Img2, Img3, Img4, Img5, Img6, Img7, Img8]}
-      />
+      {step == 'huoguos' && (
+        <MemoImage
+          title={'那些年，我们一起吃的火锅'}
+          img={[Img9, Img2, Img3, Img4, Img41, Img5, Img6, Img7, Img8, Img1]}
+        />
+      )}
     </StyledWrapper>
   );
 }

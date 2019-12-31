@@ -13,18 +13,39 @@ const StyledWrapper = styled.div`
     position: absolute;
     background: rgb(242, 246, 193);
     border: 1px solid rgba(170, 157, 134, 0.5);
+    font-size: 25px;
     font-weight: 800;
     color: #333;
-    top: 0;
+    top: 5px;
     left: 0px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     z-index: 1;
     transform: rotate(-10deg);
+    &:before,
+    &:after {
+      content: '';
+      width: 100px;
+      height: 20px;
+      background: rgba(222, 222, 222, 0.4);
+      display: block;
+      position: absolute;
+    }
+    &:before {
+      left: -35px;
+      top: -3px;
+      transform: rotate(-34deg);
+    }
+    &:after {
+      right: -35px;
+      bottom: -3px;
+      transform: rotate(-44deg);
+      width: 80px;
+    }
   }
   .desc {
     position: absolute;
     font-size: 22px;
-    bottom: 0;
+    bottom: -5px;
     right: 0;
     z-index: 2;
     transform: rotate(-5deg);
@@ -42,7 +63,7 @@ const StyledWrapper = styled.div`
     img {
       box-shadow: 0 0 8px 2px #a98175;
       border: 10px solid #fff;
-
+      max-width: 500px;
       transform: rotate(5deg) scale(0.8);
     }
   }

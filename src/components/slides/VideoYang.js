@@ -23,7 +23,7 @@ export default function VideoYang({ currStep }) {
       data-scale="2"
       data-autoplay="10"
     >
-      <MemoVideo paused={!isCurr} desc="羊！国！春！~~~" video={VideoSrc} />
+      <MemoVideo paused={!isCurr} title="羊！国！春！" video={VideoSrc} />
     </StyledWrapper>
   );
 }

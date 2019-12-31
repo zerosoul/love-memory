@@ -71,9 +71,11 @@ export default function Notepaper({ date, content, ...rest }) {
   return (
     <StyledNote {...rest}>
       <figure className="quote">
-        <blockquote className="content" cite="https://www.youtube.com/watch?v=qYLrc9hy0t0">
-          {content}
-        </blockquote>
+        <blockquote
+          dangerouslySetInnerHTML={{ __html: content }}
+          className="content"
+          cite="https://works.yangerxiao.com/love-memory/"
+        ></blockquote>
         {date && <figcaption className="quote-by">— {date}</figcaption>}
       </figure>
     </StyledNote>

@@ -10,7 +10,15 @@ import MemoImage from '../MemoImage';
 
 export default function We() {
   return (
-    <div id="overview" className="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
+    <div
+      id="overview"
+      className="step"
+      data-x="3000"
+      data-y="1500"
+      data-z="0"
+      data-scale="10"
+      data-autoplay="26"
+    >
       <MemoImage title={'我们'} img={[We1, We2, We3, We4, We5, We6, We7]} />
     </div>
   );
