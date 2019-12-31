@@ -41,8 +41,8 @@ const StyledNote = styled.div`
   }
 
   .quote {
-    font-family: Georgia, serif;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: bold;
     .content {
       color: black;
     }
@@ -60,7 +60,7 @@ const StyledNote = styled.div`
       display: block;
       padding-right: 10px;
       text-align: right;
-      font-size: 13px;
+      font-size: 16px;
       font-style: italic;
       color: #84775c;
     }

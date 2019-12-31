@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { Carousel } from 'react-responsive-carousel';
 import Heart from './Heart';
 import Notepaper from './Notepaper';
 const StyledWrapper = styled.div`
@@ -29,27 +27,22 @@ const StyledWrapper = styled.div`
     z-index: 2;
     transform: rotate(-5deg);
   }
-
+  img {
+    box-shadow: 0 0 8px 2px #a98175;
+    border: 10px solid #fff;
+    transform: rotate(5deg);
+    width: 60%;
+  }
   .heart {
     position: absolute;
     top: 40%;
+
     opacity: 0.5;
     transform: rotate(-3deg);
   }
-  /* overwrite */
-  .carousel .slide {
-    background: none;
-    img {
-      box-shadow: 0 0 8px 2px #a98175;
-      border: 10px solid #fff;
-
-      transform: rotate(5deg) scale(0.8);
-    }
-  }
 `;
 
-export default function MemoImage({ img, title = '', desc = '', date = '' }) {
-  const imgs = Array.isArray(img) ? img : [img];
+export default function MemoImage({ img, title = '', desc = '', date = '', width = '60%' }) {
   return (
     <StyledWrapper className="photo">
       {title && <div className="title">{title}</div>}
@@ -61,23 +54,7 @@ export default function MemoImage({ img, title = '', desc = '', date = '' }) {
         />
       )}
       {desc && <Notepaper date={date} content={desc} className="desc"></Notepaper>}
-      <Carousel
-        dynamicHeight={true}
-        infiniteLoop={true}
-        autoPlay={true}
-        showArrows={false}
-        showIndicators={imgs.length > 1 ? true : false}
-        showThumbs={false}
-        showStatus={false}
-      >
-        {imgs.map((item, idx) => {
-          return (
-            <div key={idx}>
-              <img src={item} />
-            </div>
-          );
-        })}
-      </Carousel>
+      <img style={{ width }} src={img} />
       <Heart
         style={{
           opacity: '.3',

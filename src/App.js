@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import 'impress.js';
 import styled from 'styled-components';
+import Navs from './components/Navs';
 import StartMask from './components/StartMask';
 import LoveDuration from './components/slides/LoveDuration';
 import PSpring from './components/slides/PSpring';
@@ -22,6 +23,7 @@ import Thanks1 from './components/slides/Thanks1';
 import Thanks2 from './components/slides/Thanks2';
 import Thanks3 from './components/slides/Thanks3';
 import Thanks4 from './components/slides/Thanks4';
+import We from './components/slides/We';
 const StyledBody = styled.section`
   min-height: 740px;
   opacity: 0;
@@ -62,6 +64,20 @@ const App = () => {
   return (
     <>
       {!start && <StartMask startPlay={handleStart} />}
+      {start && (
+        <Navs
+          goNext={() => {
+            window.impress().next();
+          }}
+          goPrev={
+            currStep == 'love-dur'
+              ? null
+              : () => {
+                  window.impress().prev();
+                }
+          }
+        />
+      )}
       <StyledBody className={start ? 'start' : ''} id="impress">
         <LoveDuration />
         <PSpring currStep={currStep} />
@@ -85,7 +101,7 @@ const App = () => {
         <Thanks2 />
         <Thanks3 />
         <Thanks4 />
-
+        <We />
         <div
           id="its-in-3d"
           className="step"

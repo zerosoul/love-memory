@@ -13,7 +13,7 @@ export default function Xiufa() {
       data-z="-3000"
       data-rotate="300"
       data-scale="1"
-      data-autoplay="6"
+      data-autoplay="3336"
     >
       <MemoImage
         img={Img}

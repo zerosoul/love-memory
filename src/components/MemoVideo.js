@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PlayImage from '../assets/img/play.svg';
 
 const StyledWrapper = styled.div`
+  z-index: 999;
   position: relative;
   display: flex;
   flex-direction: column;
