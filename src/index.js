@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import Bgm from './components/Bgm';
@@ -9,17 +9,27 @@ import GlobalStyle from './Global.style';
 import register from './registerServiceWorker';
 const Coms = () => {
   const [loaded, setLoaded] = useState(false);
+  const [canplay, setCanplay] = useState(false);
+  useEffect(() => {
+    window.onload = () => {
+      console.log('loaded');
 
+      setLoaded(true);
+    };
+    return () => {
+      window.onload = null;
+    };
+  }, []);
   return (
     <>
-      {!loaded && <Loading />}
+      {!loaded && !canplay && <Loading />}
       <Bgm
         loadOver={() => {
-          setLoaded(true);
+          setCanplay(true);
         }}
       />
       <GlobalStyle />
-      {loaded && <App />}
+      {loaded && canplay && <App />}
     </>
   );
 };
