@@ -1,8 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import Img1 from '../../assets/memo/ontheroad.1.png';
 import Img2 from '../../assets/memo/ontheroad.2.png';
 import Img3 from '../../assets/memo/ontheroad.3.png';
@@ -10,30 +7,17 @@ import Img4 from '../../assets/memo/ontheroad.4.png';
 import Img5 from '../../assets/memo/ontheroad.5.png';
 import Img6 from '../../assets/memo/ontheroad.6.png';
 import Img7 from '../../assets/memo/ontheroad.7.png';
-const StyledWrapper = styled.div`
-  /* display: flex; */
-  /* width: 650px !important; */
-  .road {
-    padding: 8px;
-    img {
-      border: 4px solid #fff;
-    }
-  }
-  .title {
-    text-align: center;
-    margin-top: 30px;
-    padding: 10px 14px;
-    background: rgba(2, 2, 2, 0.6);
-  }
-`;
-export default function OnTheRoad() {
-  const settings = {
-    className: 'road',
-    infinite: true,
-    autoplay: true,
-    slidesToShow: 3,
-    speed: 500
-  };
+import Img8 from '../../assets/memo/ontheroad.8.png';
+import Img9 from '../../assets/memo/ontheroad.9.png';
+import Img10 from '../../assets/memo/ontheroad.10.png';
+import Img11 from '../../assets/memo/ontheroad.11.png';
+import Img12 from '../../assets/memo/ontheroad.12.png';
+import Img13 from '../../assets/memo/ontheroad.13.png';
+import Img14 from '../../assets/memo/ontheroad.14.png';
+import MemoImage from '../MemoImage';
+
+const StyledWrapper = styled.div``;
+export default function OnTheRoad({ step }) {
   return (
     <StyledWrapper
       id="ontheroad"
@@ -41,32 +25,29 @@ export default function OnTheRoad() {
       data-x="7000"
       data-y="5000"
       data-scale="1"
-      data-autoplay="15"
+      data-autoplay="48"
     >
-      <Slider {...settings}>
-        <div>
-          <img src={Img1} alt="花一样的你" />
-        </div>
-        <div>
-          <img src={Img2} alt="第二次吃火锅" />
-        </div>
-        <div>
-          <img src={Img3} alt="第三次吃火锅" />
-        </div>
-        <div>
-          <img src={Img4} alt="第四次吃火锅" />
-        </div>
-        <div>
-          <img src={Img5} alt="第五次吃火锅" />
-        </div>
-        <div>
-          <img src={Img6} alt="第六次吃火锅" />
-        </div>
-        <div>
-          <img src={Img7} alt="第七次吃火锅" />
-        </div>
-      </Slider>
-      <h2 className="title">那些次的在路上...</h2>
+      {step == 'ontheroad' && (
+        <MemoImage
+          title={'那些次的在路上...'}
+          img={[
+            Img1,
+            Img2,
+            Img3,
+            Img4,
+            Img5,
+            Img6,
+            Img7,
+            Img8,
+            Img9,
+            Img10,
+            Img11,
+            Img12,
+            Img13,
+            Img14
+          ]}
+        />
+      )}
     </StyledWrapper>
   );
 }

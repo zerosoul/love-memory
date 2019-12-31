@@ -41,8 +41,8 @@ const StyledNote = styled.div`
   }
 
   .quote {
-    font-family: Georgia, serif;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: bold;
     .content {
       color: black;
     }
@@ -60,7 +60,7 @@ const StyledNote = styled.div`
       display: block;
       padding-right: 10px;
       text-align: right;
-      font-size: 13px;
+      font-size: 16px;
       font-style: italic;
       color: #84775c;
     }
@@ -71,9 +71,11 @@ export default function Notepaper({ date, content, ...rest }) {
   return (
     <StyledNote {...rest}>
       <figure className="quote">
-        <blockquote className="content" cite="https://www.youtube.com/watch?v=qYLrc9hy0t0">
-          {content}
-        </blockquote>
+        <blockquote
+          dangerouslySetInnerHTML={{ __html: content }}
+          className="content"
+          cite="https://works.yangerxiao.com/love-memory/"
+        ></blockquote>
         {date && <figcaption className="quote-by">— {date}</figcaption>}
       </figure>
     </StyledNote>

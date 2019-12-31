@@ -23,7 +23,7 @@ export default function VideoTired({ currStep }) {
       data-scale="3"
       data-autoplay="15"
     >
-      <MemoVideo paused={!isCurr} desc="可把我累坏了~~~" video={VideoSrc} />
+      <MemoVideo paused={!isCurr} title="可把我累坏了~" video={VideoSrc} />
     </StyledWrapper>
   );
 }

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Img from '../../assets/memo/xiufa.2.png';
 import MemoImage from '../MemoImage';
 const StyledWrapper = styled.div``;
-export default function Behind() {
+export default function Behind({ step }) {
   return (
     <StyledWrapper
       id="beiying"
@@ -15,7 +15,9 @@ export default function Behind() {
       data-scale="6"
       data-autoplay="7"
     >
-      <MemoImage img={Img} title="背影" desc="后来，直发改成了卷发，更洋气了，依然漂亮~" />
+      {step == 'beiying' && (
+        <MemoImage img={Img} title="洋娃娃背影" desc="后来，直发改成了卷发，更洋气了，依然漂亮~" />
+      )}
     </StyledWrapper>
   );
 }

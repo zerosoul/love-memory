@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import 'impress.js';
 import styled from 'styled-components';
+import Navs from './components/Navs';
 import StartMask from './components/StartMask';
 import LoveDuration from './components/slides/LoveDuration';
 import PSpring from './components/slides/PSpring';
@@ -22,6 +23,9 @@ import Thanks1 from './components/slides/Thanks1';
 import Thanks2 from './components/slides/Thanks2';
 import Thanks3 from './components/slides/Thanks3';
 import Thanks4 from './components/slides/Thanks4';
+import We from './components/slides/We';
+import Zuimei from './components/slides/Zuimei';
+import Letter from './components/slides/Letter';
 const StyledBody = styled.section`
   min-height: 740px;
   opacity: 0;
@@ -62,42 +66,46 @@ const App = () => {
   return (
     <>
       {!start && <StartMask startPlay={handleStart} />}
+      {start && (
+        <Navs
+          goNext={() => {
+            window.impress().next();
+          }}
+          goPrev={
+            currStep == 'love-dur'
+              ? null
+              : () => {
+                  window.impress().prev();
+                }
+          }
+        />
+      )}
       <StyledBody className={start ? 'start' : ''} id="impress">
         <LoveDuration />
         <PSpring currStep={currStep} />
-        <FirstMet />
-        <Work />
-        <PairPhoto />
-        <Huoguos />
+        <FirstMet step={currStep} />
+        <Work step={currStep} />
+        <PairPhoto step={currStep} />
+        <Huoguos step={currStep} />
 
         <PSummer currStep={currStep} />
-        <Xiufa />
-        <Behind />
+        <Xiufa step={currStep} />
+        <Behind step={currStep} />
 
-        <Huanlegu />
+        <Huanlegu step={currStep} />
         <PAutumn currStep={currStep} />
         <VideoYang currStep={currStep} />
-        <Huas />
-        <OnTheRoad />
+        <Huas step={currStep} />
+        <OnTheRoad step={currStep} />
         <PWinter currStep={currStep} />
         <VideoTired currStep={currStep} />
-        <Thanks1 />
-        <Thanks2 />
-        <Thanks3 />
-        <Thanks4 />
-
-        <div
-          id="its-in-3d"
-          className="step"
-          data-x="6200"
-          data-y="4300"
-          data-z="-100"
-          data-rotate-x="-40"
-          data-rotate-y="10"
-          data-scale="2"
-        >
-          未完待续
-        </div>
+        <Thanks1 step={currStep} />
+        <Thanks2 step={currStep} />
+        <Thanks3 step={currStep} />
+        <Thanks4 step={currStep} />
+        <We step={currStep} />
+        <Zuimei step={currStep} />
+        <Letter />
       </StyledBody>
     </>
   );
