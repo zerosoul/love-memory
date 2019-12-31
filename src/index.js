@@ -22,7 +22,7 @@ const Coms = () => {
   }, []);
   return (
     <>
-      {!loaded && !canplay && <Loading />}
+      {(!loaded || !canplay) && <Loading />}
       <Bgm
         loadOver={() => {
           setCanplay(true);
