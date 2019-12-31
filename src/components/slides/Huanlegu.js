@@ -15,7 +15,7 @@ export default function Huanlegu({ step }) {
       data-x="6700"
       data-y="-300"
       data-scale="6"
-      data-autoplay="16"
+      data-autoplay="20"
     >
       {step == 'huanlegu' && (
         <MemoImage

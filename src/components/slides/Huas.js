@@ -18,7 +18,7 @@ export default function Huas({ step }) {
       data-x="7000"
       data-y="4000"
       data-scale="2"
-      data-autoplay="28"
+      data-autoplay="40"
     >
       {step == 'huas' && (
         <MemoImage

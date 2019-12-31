@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Img from '../../assets/memo/thanks.cc.png';
 import Img2 from '../../assets/memo/thanks.cc.2.png';
+import CcImage1 from '../../assets/memo/cc.1.png';
+import CcImage2 from '../../assets/memo/cc.2.png';
 import MemoImage from '../MemoImage';
 const StyledWrapper = styled.div``;
 export default function Thanks3({ step }) {
@@ -12,14 +14,14 @@ export default function Thanks3({ step }) {
       data-x="10000"
       data-y="9000"
       data-scale="3"
-      data-autoplay="9"
+      data-autoplay="10"
     >
       {step == 'thanks3' && (
         <MemoImage
           date="2018.10.03"
-          img={[Img, Img2]}
+          img={[Img, Img2, CcImage1, CcImage2]}
           title="感谢"
-          desc="给晨晨梳的漂亮小辫，一起拍好玩的美颜照，感谢你带给了晨晨很多快乐"
+          desc="给晨晨梳的漂亮小辫，一起拍好玩的美颜照，带给了晨晨很多快乐"
         />
       )}
     </StyledWrapper>

@@ -25,11 +25,11 @@ export default function OnTheRoad({ step }) {
       data-x="7000"
       data-y="5000"
       data-scale="1"
-      data-autoplay="48"
+      data-autoplay="70"
     >
       {step == 'ontheroad' && (
         <MemoImage
-          title={'那些次的在路上...'}
+          title={'我们的在路上...'}
           img={[
             Img1,
             Img2,

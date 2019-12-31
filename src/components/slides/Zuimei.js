@@ -28,7 +28,7 @@ export default function Zuimei({ step }) {
         <MemoImage
           img={[Img, Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9, Img10]}
           title="最美的你"
-          desc="感谢你陪伴我走过这三年<br/>希望余生有一个人，继续守护你..."
+          desc="感谢你陪伴我走过这三年<br/>愿余生有一个人，继续守护你..."
         />
       )}
     </StyledWrapper>

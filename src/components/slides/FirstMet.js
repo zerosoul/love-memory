@@ -12,7 +12,7 @@ export default function FirstMet({ step }) {
       className="step slide"
       data-x="1000"
       data-y="-1500"
-      data-autoplay="9"
+      data-autoplay="12"
     >
       {step == 'first-met' && (
         <MemoImage

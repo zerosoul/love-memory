@@ -15,7 +15,7 @@ export default function PWinter({ currStep }) {
       data-x="8000"
       data-y="4000"
       data-scale="2"
-      data-autoplay="12"
+      data-autoplay="14"
     />
   );
 }

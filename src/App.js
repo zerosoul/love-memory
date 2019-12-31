@@ -105,7 +105,7 @@ const App = () => {
         <Thanks4 step={currStep} />
         <We step={currStep} />
         <Zuimei step={currStep} />
-        <Letter />
+        <Letter step={currStep} />
       </StyledBody>
     </>
   );

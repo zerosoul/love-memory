@@ -22,7 +22,7 @@ export default function Huoguos({ step }) {
       data-y="3000"
       data-rotate="90"
       data-scale="5"
-      data-autoplay="27"
+      data-autoplay="50"
     >
       {step == 'huoguos' && (
         <MemoImage

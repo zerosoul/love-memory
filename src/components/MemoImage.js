@@ -60,6 +60,7 @@ const StyledWrapper = styled.div`
   /* overwrite */
   .carousel .slide {
     background: none;
+
     img {
       box-shadow: 0 0 8px 2px #a98175;
       border: 10px solid #fff;
@@ -93,7 +94,7 @@ export default function MemoImage({ img, title = '', desc = '', date = '' }) {
       >
         {imgs.map((item, idx) => {
           return (
-            <div key={idx}>
+            <div key={idx} style={{ minWidth: '300px', minHeight: '500px' }}>
               <img src={item} />
             </div>
           );

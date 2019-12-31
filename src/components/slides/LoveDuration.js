@@ -16,10 +16,11 @@ const StyledWrapper = styled.div`
   .cp {
     width: 300px;
     height: 300px;
+    border: 5px solid #fff;
     border-radius: 50%;
     overflow: hidden;
     margin: 20px 0 0 0;
-    box-shadow: 0 2px 6px #b36d61;
+    box-shadow: 0 2px 6px #b36d00;
     img {
       width: 100%;
     }
@@ -75,7 +76,7 @@ export default function LoveDuration() {
       className="step slide"
       data-x="-1000"
       data-y="-1500"
-      data-autoplay="10"
+      data-autoplay="15"
     >
       <Heart animated={true} />
       <div className="cp">

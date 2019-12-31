@@ -96,7 +96,7 @@ export default function MemoVideo({ paused = false, video, title = '', desc = ''
     <StyledWrapper className="video">
       {title && <div className="title">{title}</div>}
       {desc && <Notepaper content={desc} className="desc"></Notepaper>}
-      <video preload ref={videoEle} loop src={video} controls={false} />
+      <video preload={`true`} ref={videoEle} loop src={video} controls={false} />
       {!play && (
         <div onClick={handleClick} className="play">
           <img src={PlayImage} />

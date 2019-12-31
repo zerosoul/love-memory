@@ -14,7 +14,7 @@ export default function PSpring({ currStep }) {
       content={content}
       data-x="0"
       data-y="-1500"
-      data-autoplay="12"
+      data-autoplay="14"
     />
   );
 }

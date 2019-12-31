@@ -16,7 +16,7 @@ export default function PAutumn({ currStep }) {
       data-y="2000"
       data-rotate="20"
       data-scale="4"
-      data-autoplay="12"
+      data-autoplay="14"
     />
   );
 }
