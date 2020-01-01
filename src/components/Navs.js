@@ -11,7 +11,7 @@ const StyledWrapper = styled.div`
   .nav {
     position: absolute;
     cursor: pointer;
-    bottom: 10px;
+    bottom: 20px;
     width: 60px;
     height: 60px;
     border: 2px solid #555;
@@ -23,11 +23,11 @@ const StyledWrapper = styled.div`
     opacity: 0.5;
     &.n {
       background-image: url(${ArrowRight});
-      right: 10px;
+      right: 20px;
     }
     &.p {
       background-image: url(${ArrowLeft});
-      left: 10px;
+      left: 20px;
     }
   }
 `;
