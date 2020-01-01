@@ -19,8 +19,8 @@ export default function Thanks1() {
       <MemoImage
         width="40%"
         img={[Img, Img1, Img2, Img3]}
-        title="感谢"
-        desc="每一次用心准备的饭菜"
+        title="感谢🍚"
+        desc="每一次用心准备的饭菜，你做饭，我刷碗，最佳组合。但是还是你最辛苦！"
       />
     </StyledWrapper>
   );

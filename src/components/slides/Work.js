@@ -10,7 +10,7 @@ export default function Work() {
       <MemoImage
         img={[Img, Img1]}
         title="摩天轮&金玫瑰"
-        desc='摩天轮没坐成，赶紧做个手工安慰下(ﾉ"◑ ◑)ﾉ"(｡•́︿•̀｡)'
+        desc='摩天轮没坐成，赶紧做个手工安慰下<br/>(ﾉ"◑ ◑)ﾉ"(｡•́︿•̀｡)'
       />
     </StyledWrapper>
   );

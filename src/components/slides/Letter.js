@@ -12,17 +12,16 @@ import Heart from '../Heart';
 const FadeIn = keyframes`
  from {
     opacity: 0;
-    visibility:visible;
   }
 
   to {
-    visibility:visible;
     opacity: 1;
   }
 `;
 const StyledImage = styled.img`
+  z-index: 999;
   position: absolute;
-  visibility: hidden;
+  opacity: 0;
   border: 3px solid #fff;
   border-radius: 10px;
   transform: rotate(-10deg);

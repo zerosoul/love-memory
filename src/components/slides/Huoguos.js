@@ -26,7 +26,8 @@ export default function Huoguos({ step }) {
     >
       {step == 'huoguos' && (
         <MemoImage
-          title={'那些年，我们一起吃的火锅'}
+          desc="第一次，第二次，第三次...第N次"
+          title={'那些年，一起吃的火锅🍲'}
           img={[Img9, Img2, Img3, Img4, Img41, Img5, Img6, Img7, Img8, Img1]}
         />
       )}

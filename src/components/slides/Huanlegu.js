@@ -22,7 +22,7 @@ export default function Huanlegu({ step }) {
           img={[Img0, Img1, Img2, Img3]}
           title="欢乐谷"
           date="2016.10.21"
-          desc="一起去欢乐谷，在你的威逼利诱下，我成功挑战了跳楼机~~~"
+          desc="在你的威逼利诱下，恐高的我成功挑战了跳楼机~~~"
         />
       )}
     </StyledWrapper>

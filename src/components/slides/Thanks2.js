@@ -17,7 +17,11 @@ export default function Thanks2({ step }) {
       data-autoplay="20"
     >
       {step == 'thanks2' && (
-        <MemoImage img={[Img0, Img1, Img2, Img3]} title="感谢" desc="每一次精心准备的早餐" />
+        <MemoImage
+          img={[Img0, Img1, Img2, Img3]}
+          title="感谢"
+          desc="每一次精心准备的早餐，好吃又有营养。"
+        />
       )}
     </StyledWrapper>
   );
