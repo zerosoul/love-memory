@@ -20,7 +20,7 @@ export default function Thanks2({ step }) {
         <MemoImage
           img={[Img0, Img1, Img2, Img3]}
           title="感谢"
-          desc="每一次精心准备的早餐，好吃又有营养。"
+          desc="每一次精心准备的早餐，颜值和你一样高，好吃又有营养。"
         />
       )}
     </StyledWrapper>

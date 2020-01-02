@@ -17,14 +17,18 @@ import PAutumn from './components/slides/PAutumn';
 import PWinter from './components/slides/PWinter';
 import Huas from './components/slides/Huas';
 import OnTheRoad from './components/slides/OnTheRoad';
+import Wuyuan from './components/slides/Wuyuan';
+import Nanjing from './components/slides/Nanjing';
 import VideoYang from './components/slides/VideoYang';
 import VideoTired from './components/slides/VideoTired';
+import VideoJump from './components/slides/VideoJump';
 import Thanks1 from './components/slides/Thanks1';
 import Thanks2 from './components/slides/Thanks2';
 import Thanks3 from './components/slides/Thanks3';
 import Thanks4 from './components/slides/Thanks4';
 import We from './components/slides/We';
 import Zuimei from './components/slides/Zuimei';
+import Cloth from './components/slides/Cloth';
 import Letter from './components/slides/Letter';
 const StyledBody = styled.section`
   min-height: 740px;
@@ -93,10 +97,14 @@ const App = () => {
         <Behind step={currStep} />
 
         <Huanlegu step={currStep} />
+        <VideoJump currStep={currStep}/>
         <PAutumn currStep={currStep} />
+        <Cloth step={currStep} />
         <VideoYang currStep={currStep} />
         <Huas step={currStep} />
         <OnTheRoad step={currStep} />
+        <Wuyuan step={currStep} />
+        <Nanjing step={currStep} />
         <PWinter currStep={currStep} />
         <VideoTired currStep={currStep} />
         <Thanks1 step={currStep} />

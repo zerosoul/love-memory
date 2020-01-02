@@ -17,6 +17,7 @@ const StyledWrapper = styled.div`
     position: absolute;
     background: rgb(242, 246, 193);
     border: 1px solid rgba(170, 157, 134, 0.5);
+    font-size:26px;
     font-weight: 800;
     color: #333;
     top: 0;

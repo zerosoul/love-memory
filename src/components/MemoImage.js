@@ -65,7 +65,12 @@ const StyledWrapper = styled.div`
       box-shadow: 0 0 8px 2px #a98175;
       border: 10px solid #fff;
       max-width: 500px;
+    }
+    &:nth-child(odd) img {
       transform: rotate(5deg) scale(0.8);
+    }
+    &:nth-child(even) img {
+      transform: rotate(-5deg) scale(0.8);
     }
   }
 `;
@@ -84,6 +89,7 @@ export default function MemoImage({ img, title = '', desc = '', date = '' }) {
       )}
       {desc && <Notepaper date={date} content={desc} className="desc"></Notepaper>}
       <Carousel
+        transitionTime={300}
         dynamicHeight={true}
         infiniteLoop={true}
         autoPlay={true}

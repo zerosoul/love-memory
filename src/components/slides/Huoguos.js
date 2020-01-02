@@ -10,6 +10,12 @@ import Img6 from '../../assets/memo/huoguo.6.png';
 import Img7 from '../../assets/memo/huoguo.7.png';
 import Img8 from '../../assets/memo/huoguo.8.png';
 import Img9 from '../../assets/memo/huoguo.9.png';
+import Img10 from '../../assets/memo/huoguo.10.jpeg';
+import Img11 from '../../assets/memo/huoguo.11.jpeg';
+import Img12 from '../../assets/memo/huoguo.12.jpeg';
+import Img13 from '../../assets/memo/huoguo.13.jpeg';
+import Img14 from '../../assets/memo/huoguo.14.jpeg';
+import Img15 from '../../assets/memo/huoguo.15.jpeg';
 import MemoImage from '../MemoImage';
 
 const StyledWrapper = styled.div``;
@@ -22,13 +28,30 @@ export default function Huoguos({ step }) {
       data-y="3000"
       data-rotate="90"
       data-scale="5"
-      data-autoplay="50"
+      data-autoplay="80"
     >
       {step == 'huoguos' && (
         <MemoImage
           desc="第一次，第二次，第三次...第N次"
           title={'那些年，一起吃的火锅🍲'}
-          img={[Img9, Img2, Img3, Img4, Img41, Img5, Img6, Img7, Img8, Img1]}
+          img={[
+            Img9,
+            Img2,
+            Img3,
+            Img4,
+            Img41,
+            Img5,
+            Img6,
+            Img7,
+            Img8,
+            Img1,
+            Img10,
+            Img11,
+            Img12,
+            Img13,
+            Img14,
+            Img15
+          ]}
         />
       )}
     </StyledWrapper>
