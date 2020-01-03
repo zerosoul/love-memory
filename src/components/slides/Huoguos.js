@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Img1 from '../../assets/memo/huoguo.1.png';
 import Img2 from '../../assets/memo/huoguo.2.png';
 import Img3 from '../../assets/memo/huoguo.3.png';
@@ -18,10 +17,9 @@ import Img14 from '../../assets/memo/huoguo.14.jpeg';
 import Img15 from '../../assets/memo/huoguo.15.jpeg';
 import MemoImage from '../MemoImage';
 
-const StyledWrapper = styled.div``;
 export default function Huoguos({ step }) {
   return (
-    <StyledWrapper
+    <div
       id="huoguos"
       className="step"
       data-x="850"
@@ -54,6 +52,6 @@ export default function Huoguos({ step }) {
           ]}
         />
       )}
-    </StyledWrapper>
+    </div>
   );
 }

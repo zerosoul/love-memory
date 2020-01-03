@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
+import LazyImage from './LazyImage';
 import Heart from './Heart';
 import Notepaper from './Notepaper';
 const StyledWrapper = styled.div`
@@ -58,23 +59,36 @@ const StyledWrapper = styled.div`
     transform: rotate(-3deg);
   }
   /* overwrite */
-  .carousel .slide {
-    background: none;
+  .carousel {
+    .carousel-status {
+      position: static;
+      display: flex;
+      justify-content: center;
+    }
+    .slide {
+      background: none;
 
-    img {
-      box-shadow: 0 0 8px 2px #a98175;
-      border: 10px solid #fff;
-      max-width: 500px;
-    }
-    &:nth-child(odd) img {
-      transform: rotate(5deg) scale(0.8);
-    }
-    &:nth-child(even) img {
-      transform: rotate(-5deg) scale(0.8);
+      img {
+        box-shadow: 0 0 8px 2px #a98175;
+        border: 10px solid #fff;
+        max-width: 500px;
+      }
+      &:nth-child(odd) img {
+        transform: rotate(5deg) scale(0.8);
+      }
+      &:nth-child(even) img {
+        transform: rotate(-5deg) scale(0.8);
+      }
     }
   }
 `;
-
+const StyledStatus = styled.span`
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 8px;
+  background-color: rgba(2, 2, 2, 0.5);
+`;
 export default function MemoImage({ img, title = '', desc = '', date = '' }) {
   const imgs = Array.isArray(img) ? img : [img];
   return (
@@ -94,14 +108,30 @@ export default function MemoImage({ img, title = '', desc = '', date = '' }) {
         infiniteLoop={true}
         autoPlay={true}
         showArrows={false}
-        showIndicators={imgs.length > 1 ? true : false}
         showThumbs={false}
-        showStatus={false}
+        showIndicators={false}
+        showStatus={imgs.length > 1 ? true : false}
+        statusFormatter={(current, total) => {
+          return (
+            <StyledStatus>
+              {current}/{total}
+            </StyledStatus>
+          );
+        }}
       >
         {imgs.map((item, idx) => {
           return (
-            <div key={idx} style={{ minWidth: '300px', minHeight: '500px' }}>
-              <img src={item} />
+            <div
+              key={idx}
+              style={{
+                minWidth: '300px',
+                minHeight: '500px',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+              }}
+            >
+              <LazyImage src={item} />
             </div>
           );
         })}

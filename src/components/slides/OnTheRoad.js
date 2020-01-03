@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Img1 from '../../assets/memo/ontheroad.1.png';
 import Img2 from '../../assets/memo/ontheroad.2.png';
 import Img3 from '../../assets/memo/ontheroad.3.png';
@@ -16,10 +15,9 @@ import Img13 from '../../assets/memo/ontheroad.13.png';
 import Img14 from '../../assets/memo/ontheroad.14.png';
 import MemoImage from '../MemoImage';
 
-const StyledWrapper = styled.div``;
 export default function OnTheRoad({ step }) {
   return (
-    <StyledWrapper
+    <div
       id="ontheroad"
       className="step"
       data-x="7000"
@@ -48,6 +46,6 @@ export default function OnTheRoad({ step }) {
           ]}
         />
       )}
-    </StyledWrapper>
+    </div>
   );
 }

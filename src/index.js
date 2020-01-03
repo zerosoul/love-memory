@@ -6,7 +6,7 @@ import Loading from './components/Loading';
 
 import GlobalStyle from './Global.style';
 
-import register from './registerServiceWorker';
+import { unregister } from './registerServiceWorker';
 const Coms = () => {
   const [loaded, setLoaded] = useState(false);
   const [canplay, setCanplay] = useState(false);
@@ -35,4 +35,4 @@ const Coms = () => {
 };
 ReactDOM.render(<Coms />, document.getElementById('root'));
 
-register();
+unregister();

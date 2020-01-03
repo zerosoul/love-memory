@@ -1,13 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
 import Img from '../../assets/memo/thanks.gp.png';
 import Img2 from '../../assets/memo/thanks.gp.2.png';
 import Img3 from '../../assets/memo/thanks.gp.3.png';
 import MemoImage from '../MemoImage';
-const StyledWrapper = styled.div``;
 export default function Thanks4({ step }) {
   return (
-    <StyledWrapper
+    <div
       id="thanks4"
       className="step"
       data-x="10000"
@@ -23,6 +21,6 @@ export default function Thanks4({ step }) {
           desc="每次带你回家你都会陪奶奶包饺子，还给奶奶买新衣服，奶奶非常喜欢你，说与你在一起的时光总是很开心，很短暂，一直在夸你"
         />
       )}
-    </StyledWrapper>
+    </div>
   );
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Img2 from '../../assets/memo/wuyuan.2.jpeg';
 import Img3 from '../../assets/memo/wuyuan.3.jpeg';
 import Img4 from '../../assets/memo/wuyuan.4.jpeg';
@@ -30,10 +29,9 @@ import Img28 from '../../assets/memo/wuyuan.28.jpeg';
 import Img29 from '../../assets/memo/wuyuan.29.jpeg';
 import MemoImage from '../MemoImage';
 
-const StyledWrapper = styled.div``;
 export default function Wuyuan({ step }) {
   return (
-    <StyledWrapper
+    <div
       id="wuyuan"
       className="step"
       data-x="7000"
@@ -76,6 +74,6 @@ export default function Wuyuan({ step }) {
           ]}
         />
       )}
-    </StyledWrapper>
+    </div>
   );
 }

@@ -1,14 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import Img from '../../assets/memo/thanks.cc.png';
 import Img2 from '../../assets/memo/thanks.cc.2.png';
 import CcImage1 from '../../assets/memo/cc.1.png';
 import CcImage2 from '../../assets/memo/cc.2.png';
 import MemoImage from '../MemoImage';
-const StyledWrapper = styled.div``;
 export default function Thanks3({ step }) {
   return (
-    <StyledWrapper
+    <div
       id="thanks3"
       className="step"
       data-x="10000"
@@ -24,6 +22,6 @@ export default function Thanks3({ step }) {
           desc="给晨晨梳的漂亮小辫，一起拍好玩的美颜照，带给了晨晨很多快乐"
         />
       )}
-    </StyledWrapper>
+    </div>
   );
 }

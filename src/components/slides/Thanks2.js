@@ -1,14 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import Img0 from '../../assets/memo/bf.1.png';
 import Img1 from '../../assets/memo/bf.4.jpg';
 import Img2 from '../../assets/memo/bf.2.jpg';
 import Img3 from '../../assets/memo/bf.3.jpg';
 import MemoImage from '../MemoImage';
-const StyledWrapper = styled.div``;
 export default function Thanks2({ step }) {
   return (
-    <StyledWrapper
+    <div
       id="thanks2"
       className="step"
       data-x="10000"
@@ -23,6 +21,6 @@ export default function Thanks2({ step }) {
           desc="每一次精心准备的早餐，颜值和你一样高，好吃又有营养。"
         />
       )}
-    </StyledWrapper>
+    </div>
   );
 }

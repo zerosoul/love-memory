@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Img from '../../assets/memo/zuimei.png';
 import Img1 from '../../assets/memo/zuimei.1.jpeg';
 import Img2 from '../../assets/memo/zuimei.2.png';
@@ -17,10 +16,9 @@ import Img13 from '../../assets/memo/zuimei.13.jpeg';
 import Img14 from '../../assets/memo/zuimei.14.png';
 import Img15 from '../../assets/memo/zuimei.15.jpeg';
 import MemoImage from '../MemoImage';
-const StyledWrapper = styled.div``;
 export default function Zuimei({ step }) {
   return (
-    <StyledWrapper
+    <div
       id="zuimei"
       className="step"
       data-x="3000"
@@ -53,6 +51,6 @@ export default function Zuimei({ step }) {
           desc="曾经有一份真诚的爱情放在我面前，我没有珍惜，等我失去的时候我才后悔莫及，人世间最痛苦的事莫过于此。<br/>相遇相伴，相知相爱，感谢陪伴。<br/>愿余生有一个人，继续守护你..."
         />
       )}
-    </StyledWrapper>
+    </div>
   );
 }

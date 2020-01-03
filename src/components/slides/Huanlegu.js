@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Img0 from '../../assets/memo/youlechang.0.png';
 import Img1 from '../../assets/memo/youlechang.1.png';
 import Img2 from '../../assets/memo/youlechang.2.png';
@@ -9,10 +8,9 @@ import Img5 from '../../assets/memo/youlechang.5.jpeg';
 import Img6 from '../../assets/memo/youlechang.6.jpeg';
 import MemoImage from '../MemoImage';
 
-const StyledWrapper = styled.div``;
 export default function Huanlegu({ step }) {
   return (
-    <StyledWrapper
+    <div
       id="huanlegu"
       className="step"
       data-x="6700"
@@ -28,6 +26,6 @@ export default function Huanlegu({ step }) {
           desc="在你的威逼利诱下，恐高的我成功挑战了跳楼机~~~"
         />
       )}
-    </StyledWrapper>
+    </div>
   );
 }

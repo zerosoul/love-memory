@@ -23,7 +23,7 @@ import We20 from '../../assets/memo/we.20.jpeg';
 import We21 from '../../assets/memo/we.21.jpeg';
 import MemoImage from '../MemoImage';
 
-export default function We() {
+export default function We({ step }) {
   return (
     <div
       id="we"
@@ -34,7 +34,35 @@ export default function We() {
       data-scale="10"
       data-autoplay="98"
     >
-      <MemoImage title={'我们'} img={[We0,We20,We19,We1, We2,We21, We3, We4, We5, We6, We7, We8, We9, We10,We11,We12,We13,We14,We15,We16,We17,We18]} />
+      {step == 'we' && (
+        <MemoImage
+          title={'我们'}
+          img={[
+            We0,
+            We20,
+            We19,
+            We1,
+            We2,
+            We21,
+            We3,
+            We4,
+            We5,
+            We6,
+            We7,
+            We8,
+            We9,
+            We10,
+            We11,
+            We12,
+            We13,
+            We14,
+            We15,
+            We16,
+            We17,
+            We18
+          ]}
+        />
+      )}
     </div>
   );
 }

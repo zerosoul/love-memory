@@ -1,11 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 import Img from '../../assets/memo/cloth.png';
 import MemoImage from '../MemoImage';
-const StyledWrapper = styled.div``;
 export default function Cloth({ step }) {
   return (
-    <StyledWrapper
+    <div
       id="cloth"
       className="step"
       data-x="3500"
@@ -16,8 +14,12 @@ export default function Cloth({ step }) {
       data-autoplay="10"
     >
       {step == 'cloth' && (
-        <MemoImage img={Img} title="亲子装" desc="那天我们一起逛动物园，碰到一个和你穿一样衣服的小朋友~<br/>超可爱~" />
+        <MemoImage
+          img={Img}
+          title="亲子装"
+          desc="那天我们一起逛动物园，碰到一个和你穿一样衣服的小朋友~<br/>超可爱~"
+        />
       )}
-    </StyledWrapper>
+    </div>
   );
 }
