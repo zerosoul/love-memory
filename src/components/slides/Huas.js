@@ -14,7 +14,7 @@ export default function Huas({ step }) {
       {step == 'huas' && (
         <MemoImage
           title={'🌺花一样的你，猪一样的我🐷'}
-          img={[Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8]}
+          img={[Img3, Img1, Img2, Img4, Img5, Img6, Img7, Img8]}
         />
       )}
     </div>

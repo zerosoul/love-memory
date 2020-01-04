@@ -67,11 +67,15 @@ const StyledWrapper = styled.div`
     }
     .slide {
       background: none;
-
+      display: flex;
+      align-items: center;
+      justify-content: center;
       img {
         box-shadow: 0 0 8px 2px #a98175;
         border: 10px solid #fff;
-        max-width: 500px;
+        max-width: 800px;
+        min-width: 500px;
+        height: auto;
       }
       &:nth-child(odd) img {
         transform: rotate(5deg) scale(0.8);
@@ -87,7 +91,15 @@ const StyledStatus = styled.span`
   color: #fff;
   font-size: 16px;
   padding: 5px 8px;
-  background-color: rgba(2, 2, 2, 0.5);
+  text-shadow: 0 0 4px rgba(2, 2, 2, 0.6);
+`;
+const StyledBox = styled.div`
+  min-width: 300px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 export default function MemoImage({ img, title = '', desc = '', date = '' }) {
   const imgs = Array.isArray(img) ? img : [img];
@@ -121,18 +133,9 @@ export default function MemoImage({ img, title = '', desc = '', date = '' }) {
       >
         {imgs.map((item, idx) => {
           return (
-            <div
-              key={idx}
-              style={{
-                minWidth: '300px',
-                minHeight: '500px',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center'
-              }}
-            >
+            <StyledBox key={idx}>
               <LazyImage src={item} />
-            </div>
+            </StyledBox>
           );
         })}
       </Carousel>

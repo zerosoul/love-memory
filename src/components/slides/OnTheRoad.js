@@ -1,7 +1,7 @@
 import React from 'react';
 import Img1 from '../../assets/memo/ontheroad.1.png';
 import Img2 from '../../assets/memo/ontheroad.2.png';
-import Img3 from '../../assets/memo/ontheroad.3.png';
+// import Img3 from '../../assets/memo/ontheroad.3.png';
 import Img4 from '../../assets/memo/ontheroad.4.png';
 import Img5 from '../../assets/memo/ontheroad.5.png';
 import Img6 from '../../assets/memo/ontheroad.6.png';
@@ -28,22 +28,7 @@ export default function OnTheRoad({ step }) {
       {step == 'ontheroad' && (
         <MemoImage
           title={'我们的在路上...'}
-          img={[
-            Img1,
-            Img2,
-            Img3,
-            Img4,
-            Img5,
-            Img6,
-            Img7,
-            Img8,
-            Img9,
-            Img10,
-            Img11,
-            Img12,
-            Img13,
-            Img14
-          ]}
+          img={[Img1, Img2, Img4, Img5, Img6, Img7, Img8, Img9, Img10, Img11, Img12, Img13, Img14]}
         />
       )}
     </div>
