@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import LazyLoad from 'vanilla-lazyload';
+import HeartSvg from '../assets/img/heart.svg';
 
 // Only initialize it one time for the entire application
 if (!document.lazyLoadInstance) {
@@ -12,5 +13,7 @@ export default function LazyImage({ alt = 'lazy image', src, width, height }) {
   useEffect(() => {
     document.lazyLoadInstance.update();
   }, [src]);
-  return <img alt={alt} className="lazy" data-src={src} width={width} height={height} />;
+  return (
+    <img src={HeartSvg} alt={alt} className="lazy" data-src={src} width={width} height={height} />
+  );
 }

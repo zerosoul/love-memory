@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
 import MemoVideo from '../MemoVideo';
 import VideoSrc from '../../assets/memo/ygc.mp4';
 
-const StyledWrapper = styled.div``;
 const currId = 'video-yang';
 export default function VideoYang({ currStep }) {
   const [isCurr, setIsCurr] = useState(false);
@@ -15,15 +13,8 @@ export default function VideoYang({ currStep }) {
     }
   }, [currStep]);
   return (
-    <StyledWrapper
-      id={currId}
-      className="step slide"
-      data-x="6000"
-      data-y="4000"
-      data-scale="2"
-      data-autoplay="10"
-    >
-      <MemoVideo paused={!isCurr} title="羊！国！春！" video={VideoSrc} />
-    </StyledWrapper>
+    <div id={currId} className="step" data-x="6000" data-y="4000" data-scale="2" data-autoplay="10">
+      {currStep == currId && <MemoVideo paused={!isCurr} title="羊！国！春！" video={VideoSrc} />}
+    </div>
   );
 }
