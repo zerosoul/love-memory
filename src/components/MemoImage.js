@@ -134,7 +134,7 @@ export default function MemoImage({ img, title = '', desc = '', date = '' }) {
         {imgs.map((item, idx) => {
           return (
             <StyledBox key={idx}>
-              <LazyImage src={item} />
+              <LazyImage src={`https://gitee.com/zyanggc/oss/raw/master/memo/${item}`} />
             </StyledBox>
           );
         })}

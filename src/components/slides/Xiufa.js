@@ -1,5 +1,4 @@
 import React from 'react';
-import Img from '../../assets/memo/xiufa.1.png';
 import MemoImage from '../MemoImage';
 export default function Xiufa({ step }) {
   return (
@@ -15,7 +14,7 @@ export default function Xiufa({ step }) {
     >
       {step == 'xiufa' && (
         <MemoImage
-          img={Img}
+          img={'xiufa.1.png'}
           date="2018.02.27"
           title="染发啦"
           desc="第一次陪你去染发，兴奋得像个孩子，一说要拍照，又安静得像个淑女~"

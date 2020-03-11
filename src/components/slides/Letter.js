@@ -1,14 +1,13 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import NotePaper from '../Notepaper';
-import WeImage from '../../assets/memo/letter.jpg';
-import We4Image from '../../assets/memo/letter.we.4.png';
-import We1Image from '../../assets/memo/letter.we.1.png';
-import We2Image from '../../assets/memo/letter.we.2.png';
-import We3Image from '../../assets/memo/letter.we.3.png';
-import We5Image from '../../assets/memo/letter.we.5.png';
 import Heart from '../Heart';
-
+const WeImage='https://gitee.com/zyanggc/oss/raw/master/memo/letter.jpg';
+const We1Image='https://gitee.com/zyanggc/oss/raw/master/memo/letter.we.1.png';
+const We2Image='https://gitee.com/zyanggc/oss/raw/master/memo/letter.we.2.png';
+const We3Image='https://gitee.com/zyanggc/oss/raw/master/memo/letter.we.3.png';
+const We4Image='https://gitee.com/zyanggc/oss/raw/master/memo/letter.we.4.png';
+const We5Image='https://gitee.com/zyanggc/oss/raw/master/memo/letter.we.5.png';
 const FadeIn = keyframes`
  from {
     opacity: 0;

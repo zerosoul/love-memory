@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import MtlImg from '../../assets/memo/mtl.jpg';
 import Heart from '../Heart';
 const StyledWrapper = styled.div`
   background-color: #a98175;
@@ -80,7 +79,7 @@ export default function LoveDuration() {
     >
       <Heart animated={true} />
       <div className="cp">
-        <img src={MtlImg} alt="摩天轮下" />
+        <img src={'https://gitee.com/zyanggc/oss/raw/master/memo/mtl.jpg'} alt="摩天轮下" />
       </div>
       <h2 className="title">相遇相伴 相知相爱</h2>
       <div className="dur">

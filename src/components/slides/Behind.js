@@ -1,5 +1,4 @@
 import React from 'react';
-import Img from '../../assets/memo/xiufa.2.png';
 import MemoImage from '../MemoImage';
 export default function Behind({ step }) {
   return (
@@ -14,7 +13,11 @@ export default function Behind({ step }) {
       data-autoplay="10"
     >
       {step == 'beiying' && (
-        <MemoImage img={Img} title="洋娃娃背影" desc="后来，直发改成了卷发，更洋气了，依然漂亮~" />
+        <MemoImage
+          img={'xiufa.2.png'}
+          title="洋娃娃背影"
+          desc="后来，直发改成了卷发，更洋气了，依然漂亮~"
+        />
       )}
     </div>
   );

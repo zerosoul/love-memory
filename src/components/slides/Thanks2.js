@@ -1,9 +1,7 @@
 import React from 'react';
-import Img0 from '../../assets/memo/bf.1.png';
-import Img1 from '../../assets/memo/bf.4.jpg';
-import Img2 from '../../assets/memo/bf.2.jpg';
-import Img3 from '../../assets/memo/bf.3.jpg';
+
 import MemoImage from '../MemoImage';
+const imgs = ['bf.1.png', 'bf.4.jpg', 'bf.2.jpg', 'bf.3.jpg'];
 export default function Thanks2({ step }) {
   return (
     <div
@@ -16,7 +14,7 @@ export default function Thanks2({ step }) {
     >
       {step == 'thanks2' && (
         <MemoImage
-          img={[Img0, Img1, Img2, Img3]}
+          img={imgs}
           title="感谢"
           desc="每一次精心准备的早餐，颜值和你一样高，好吃又有营养。"
         />
